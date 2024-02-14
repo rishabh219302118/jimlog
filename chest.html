@@ -23,6 +23,7 @@
             display: flex;
             justify-content: space-around;
             margin-top: 30px;
+            flex-wrap: wrap; /* Added to wrap options on small screens */
         }
         .options a {
             text-decoration: none;
@@ -31,9 +32,22 @@
             padding: 10px 20px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            margin: 5px; /* Added margin between options */
+            flex: 1; /* Added to make options evenly spaced */
         }
         .options a:hover {
             background-color: #0056b3;
+        }
+        
+        /* Media queries for responsiveness */
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 90%; /* Adjust container width for smaller screens */
+            }
+            .options a {
+                flex: none; /* Prevent options from taking equal space on smaller screens */
+                width: 100%; /* Set options to full width on smaller screens */
+            }
         }
     </style>
 </head>
@@ -42,11 +56,11 @@
         <h1>Welcome to Our Fitness Website</h1>
         <div class="options">
             <a href="benchpress.html">Bench Press</a>
-            <a href="FlatDumbbellPress.html">FlatDumbbellPress</a>
-            <a href="InclineDumbbellPress.html">InclineDumbbellPress</a>
-            <a href="InclineDumbbellFly.html">InclineDumbbellFly</a>
-            <a href="CableFly.html">CableFly</a>
-            <a href="ButterflyMachine.html">ButterflyMachine</a>
+            <a href="FlatDumbbellPress.html">Flat Dumbbell Press</a>
+            <a href="InclineDumbbellPress.html">Incline Dumbbell Press</a>
+            <a href="InclineDumbbellFly.html">Incline Dumbbell Fly</a>
+            <a href="CableFly.html">Cable Fly</a>
+            <a href="ButterflyMachine.html">Butterfly Machine</a>
             <a href="Dips.html">Dips</a>
         </div>
     </div>
