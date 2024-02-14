@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<body>
+    <h1 id="exerciseName"></h1>
+    <textarea id="exerciseContent" rows="10" cols="50" placeholder="Write your content here..."></textarea>
+</body>
+<script>
+    // Retrieve the exercise name from the URL query parameter
+    const params = new URLSearchParams(window.location.search);
+    const exerciseName = params.get('name');
+    
+    // Set the exercise name in the heading
+    document.getElementById('exerciseName').innerText = exerciseName;
+</script>
+</html>
