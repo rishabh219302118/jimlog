@@ -3,11 +3,11 @@ const createBtn = document.querySelector(".btn");
 let notes = document.querySelectorAll(".input-box");
 
 function showNotes(){
-    notesContainer.innerHTML = localStorage.getItem("InclineDumbbellpressnotes");}
+    notesContainer.innerHTML = localStorage.getItem("InclineDumbbellflynotes");}
     showNotes();
 
 function updateStorage() {
-    localStorage.setItem("InclineDumbbellpressnotes", notesContainer.innerHTML);
+    localStorage.setItem("InclineDumbbellflynotes", notesContainer.innerHTML);
     }
 
 
