@@ -9,45 +9,65 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+         
         }
         .container {
+            position: relative;
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             text-align: center;
-            background-color: #fff;
+           
             border-radius: 10px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+           
         }
         h1 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 20px;
+            color: #000000;
+            font-size: 39px;
+            margin-bottom: 29px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .options {
+            position: relative;
+            z-index: 1;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
         .options a {
             text-decoration: none;
-            color: #fff;
-            background-color: #007bff;
+            color: #000000;
+            background-color: #fbff00;
             padding: 15px 25px;
             border-radius: 25px;
             margin: 10px;
-            font-size: 18px;
+            font-size: 20px;
             transition: background-color 0.3s ease;
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
         }
         .options a:hover {
-            background-color: #0056b3;
+            background-color: #ff0000;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6; /* Adjust the opacity to make it dimmer */
+            z-index: 0;
+            height: auto;
+            scale: 1.2;
+        }
+        .main{
+                transform: translate(10px, 260px);
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="homepagebg.jpg" class="background-image">
+        <div class="main">
         <h1>Muscle Daddy Jimlog</h1>
         <div class="options">
             <a href="chest.html">Chest</a>
@@ -57,6 +77,7 @@
             <a href="shoulders.html">Shoulders</a>
             <a href="legs.html">Legs</a>
         </div>
-   
+    </div>
+</div>
 </body>
 </html>
