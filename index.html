@@ -9,16 +9,20 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            
          
         }
         .container {
+            width: 80%;
+    max-width: 600px; /* Limit the maximum width of the container */
             position: relative;
-            max-width: 800px;
+            /* max-width: 800px; */
             margin: 50px auto;
             padding: 20px;
             text-align: center;
            
             border-radius: 10px;
+            
            
         }
         h1 {
@@ -57,16 +61,22 @@
             opacity: 0.6; /* Adjust the opacity to make it dimmer */
             z-index: 0;
             height: auto;
-            scale: 1.2;
+            scale: 1.1;
+            height: 100vh; /* Set the height of the body to the viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    background-position-x: center;
         }
         .main{
-                transform: translate(10px, 160px);
+                transform: translate(0px, 160px);
         }
     </style>
 </head>
 <body>
+    <img src="homepagebg.jpg" class="background-image">
     <div class="container">
-        <img src="homepagebg.jpg" class="background-image">
+        
         <div class="main">
         <h1>Muscle Daddy Jimlog</h1>
         <div class="options">
