@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bench Sheet</title>
+    
+</head>
+<style>
+    /* CSS for notes app */
+body{
+    
+
+}
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.new-block-btn {
+    background-color: #28a745;
+    margin-left: 10px;
+}
+
+.new-block-btn:hover {
+    background-color: #218838;
+}
+
+/* Notes container styles */
+.notes-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Delete button styles */
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .btn, .new-block-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+thead td{
+    font-weight: 900;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1><img src="notes.png">PullUps Sheet</h1>
+       
+        <div class="notes-container">
+            <table id="pul">
+                <thead>
+                    <td>Weight(KG)</td>
+                    <td>Reps</td>
+                    <td>RPE</td>
+                    <td>Detail</td>
+                </thead>
+                <tbody>
+                    <!-- Existing entries will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="pu.js"></script>
+</body>
+</html>
