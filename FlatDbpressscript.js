@@ -55,7 +55,7 @@ function addRowOnTop() {
 
 // Button to add a new row at the top
 const addRowBtn = document.createElement("button");
-addRowBtn.textContent = "SET COMPLETED";
+addRowBtn.textContent = "ADD SET / SET COMPLETED";
 addRowBtn.addEventListener("click", () => {
     addRowOnTop();
 });
