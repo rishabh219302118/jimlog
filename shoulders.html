@@ -4,56 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        .options {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-            flex-wrap: wrap; /* Added to wrap options on small screens */
-        }
-        .options a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #007bff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin: 5px; /* Added margin between options */
-            flex: 1; /* Added to make options evenly spaced */
-        }
-        .options a:hover {
-            background-color: #0056b3;
-        }
-        
-        /* Media queries for responsiveness */
-        @media only screen and (max-width: 768px) {
-            .container {
-                width: 90%; /* Adjust container width for smaller screens */
-            }
-            .options a {
-                flex: none; /* Prevent options from taking equal space on smaller screens */
-                width: 100%; /* Set options to full width on smaller screens */
-            }
-        }
-    </style>
+   
 </head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bench press.gif');
+    background-size: cover; /* Make the background image cover the entire container */
+   
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 100vh; /* Set the height of the body to the viewport height */
+    display: flex; /* Use flexbox for vertical alignment */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    background-position-x: center;
+    background-position-y: -100PX;
+    background-size: 900px;
+   
+}
+
+.container {
+    width: 80%;
+    max-width: 600px; /* Limit the maximum width of the container */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px; /* Add some border radius for a softer look */
+    transform: translate(0px, 211px);
+    scale:.7
+}
+
+h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.options {
+    display: flex;
+    flex-direction: column; /* Stack the options vertically */
+    margin-top: 30px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ff00001f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Add some margin between options */
+    font-weight: 500;
+}
+
+.options a:hover {
+    background-color: #0056b3;
+}
+
+</style>
+
 <body>
     <div class="container">
-        <h1>Welcome to Our Fitness Website</h1>
+        <h1>Exercises</h1>
         <div class="options">
             <a href="SeatedDumbbellPress.html">Seated Dumbbell Press</a>
             <a href="ArnoldPress.html">Arnold Press</a>
